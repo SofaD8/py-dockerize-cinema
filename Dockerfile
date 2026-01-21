@@ -10,8 +10,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-RUN mkdir -p /vol/web/media
-RUN mkdir -p /vol/web/static
+RUN mkdir -p /app/vol/web/media && mkdir -p /app/vol/web/static
 
 # Створюємо користувача для безпеки (опціонально, але рекомендовано)
 # RUN adduser --disabled-password --no-create-home django-user
